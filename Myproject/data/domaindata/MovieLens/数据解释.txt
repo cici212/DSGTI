@@ -1,0 +1,458 @@
+SUMMARY
+================================================================================
+MovieLens数据集是一个关于电影评分的数据集，里面包含了从IMDB, The Movie DataBase上面得到的用户对电影的评分信息。
+
+These files contain 1,000,209 anonymous ratings of approximately 3,900 movies 
+made by 6,040 MovieLens users who joined MovieLens in 2000.
+
+USAGE LICENSE
+================================================================================
+
+Neither the University of Minnesota nor any of the researchers
+involved can guarantee the correctness of the data, its suitability
+for any particular purpose, or the validity of results based on the
+use of the data set.  The data set may be used for any research
+purposes under the following conditions:
+
+     * The user may not state or imply any endorsement from the
+       University of Minnesota or the GroupLens Research Group.
+
+     * The user must acknowledge the use of the data set in
+       publications resulting from the use of the data set
+       (see below for citation information).
+
+     * The user may not redistribute the data without separate
+       permission.
+
+     * The user may not use this information for any commercial or
+       revenue-bearing purposes without first obtaining permission
+       from a faculty member of the GroupLens Research Project at the
+       University of Minnesota.
+
+If you have any further questions or comments, please contact GroupLens
+<grouplens-info@cs.umn.edu>. 
+
+CITATION
+================================================================================
+
+To acknowledge use of the dataset in publications, please cite the following
+paper:
+
+F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History
+and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4,
+Article 19 (December 2015), 19 pages. DOI=http://dx.doi.org/10.1145/2827872
+
+ACKNOWLEDGEMENTS
+================================================================================
+
+Thanks to Shyong Lam and Jon Herlocker for cleaning up and generating the data
+set.
+
+FURTHER INFORMATION ABOUT THE GROUPLENS RESEARCH PROJECT
+================================================================================
+
+The GroupLens Research Project is a research group in the Department of 
+Computer Science and Engineering at the University of Minnesota. Members of 
+the GroupLens Research Project are involved in many research projects related 
+to the fields of information filtering, collaborative filtering, and 
+recommender systems. The project is lead by professors John Riedl and Joseph 
+Konstan. The project began to explore automated collaborative filtering in 
+1992, but is most well known for its world wide trial of an automated 
+collaborative filtering system for Usenet news in 1996. Since then the project 
+has expanded its scope to research overall information filtering solutions, 
+integrating in content-based methods as well as improving current collaborative 
+filtering technology.
+
+Further information on the GroupLens Research project, including research 
+publications, can be found at the following web site:
+        
+        http://www.grouplens.org/
+
+GroupLens Research currently operates a movie recommender based on 
+collaborative filtering:
+
+        http://www.movielens.org/
+
+RATINGS FILE DESCRIPTION
+================================================================================
+
+All ratings are contained in the file "ratings.dat" and are in the
+following format:
+
+UserID::MovieID::Rating::Timestamp
+
+- UserIDs range between 1 and 6040 
+- MovieIDs range between 1 and 3952
+- Ratings are made on a 5-star scale (whole-star ratings only)
+- Timestamp is represented in seconds since the epoch as returned by time(2)
+- Each user has at least 20 ratings
+
+USERS FILE DESCRIPTION
+================================================================================
+
+User information is in the file "users.dat" and is in the following
+format:
+
+UserID::Gender::Age::Occupation::Zip-code
+
+All demographic information is provided voluntarily by the users and is
+not checked for accuracy.  Only users who have provided some demographic
+information are included in this data set.
+
+- Gender is denoted by a "M" for male and "F" for female
+- Age is chosen from the following ranges:
+
+	*  1:  "Under 18"
+	* 18:  "18-24"
+	* 25:  "25-34"
+	* 35:  "35-44"
+	* 45:  "45-49"
+	* 50:  "50-55"
+	* 56:  "56+"
+
+- Occupation is chosen from the following choices:
+
+	*  0:  "other" or not specified
+	*  1:  "academic/educator"
+	*  2:  "artist"
+	*  3:  "clerical/admin"
+	*  4:  "college/grad student"
+	*  5:  "customer service"
+	*  6:  "doctor/health care"
+	*  7:  "executive/managerial"
+	*  8:  "farmer"
+	*  9:  "homemaker"
+	* 10:  "K-12 student"
+	* 11:  "lawyer"
+	* 12:  "programmer"
+	* 13:  "retired"
+	* 14:  "sales/marketing"
+	* 15:  "scientist"
+	* 16:  "self-employed"
+	* 17:  "technician/engineer"
+	* 18:  "tradesman/craftsman"
+	* 19:  "unemployed"
+	* 20:  "writer"
+
+MOVIES FILE DESCRIPTION
+================================================================================
+
+Movie information is in the file "movies.dat" and is in the following
+format:
+
+MovieID::Title::Genres
+
+- Titles are identical to titles provided by the IMDB (including
+year of release)
+- Genres are pipe-separated and are selected from the following genres:
+
+	* Action              A
+	* Adventure           B
+	* Animation           C
+	* Children's          D
+	* Comedy              E
+	* Crime               F
+	* Documentary         G
+	* Drama               H
+	* Fantasy             I
+	* Film-Noir           J
+	* Horror              K
+	* Musical             L
+	* Mystery             M
+	* Romance             N
+	* Sci-Fi              O
+	* Thriller            P
+	* War                 Q
+	* Western             R
+
+- Some MovieIDs do not correspond to a movie due to accidental duplicate
+entries and/or test entries
+- Movies are mostly entered by hand, so errors and inconsistencies may exist
+
+
+总结
+
+=============================================================================
+
+
+
+这些文件包含大约3,900部电影的1,000,209个匿名评级
+
+由6040名MovieLens用户制作，他们在2000年加入MovieLens。
+
+
+
+使用许可
+
+=============================================================================
+
+
+
+明尼苏达大学和研究人员都没有
+
+所涉及的数据可以保证数据的正确性、适用性
+
+为任何特定目的，或结果的有效性基于
+
+使用数据集。该数据集可用于任何研究
+
+在下列情况下的用途:
+
+
+
+*使用者不得声明或暗示任何来自
+
+明尼苏达大学或GroupLens研究小组。
+
+
+
+*用户必须承认使用的数据集
+
+由于使用数据集而产生的出版物
+
+(参考下面的引用信息)。
+
+
+
+*用户不得单独重新分发数据
+
+许可。
+
+
+
+*用户不得将此资料用于任何商业用途
+
+(三)未经许可用于收入用途的
+
+来自GroupLens研究项目的教员
+
+明尼苏达大学。
+
+
+
+如果您有任何问题或意见，请联系GroupLens
+
+< grouplens-info@cs.umn.edu >。
+
+
+
+引用
+
+=============================================================================为确认数据集在出版物中使用，请引用以下资料
+
+论文:
+
+
+
+F. Maxwell Harper和Joseph A. Konstan, 2015。MovieLens数据集:历史
+
+和上下文。交互式智能系统学报(TiiS) 5, 4，
+
+第19条(2015年12月)，19页。DOI = http://dx.doi.org/10.1145/2827872
+
+
+
+确认
+
+=============================================================================感谢Shyong Lam和Jon Herlocker清理和生成数据
+
+集。
+
+
+
+关于GROUPLENS研究项目的进一步信息
+
+=============================================================================
+
+
+
+GroupLens的研究项目是一个研究小组在系里
+
+明尼苏达大学的计算机科学与工程。的成员
+
+GroupLens研究项目参与了许多相关的研究项目
+
+到信息过滤、协同过滤等领域
+
+推荐系统。该项目由John Riedl教授和Joseph教授领导
+
+Konstan。该项目开始探索自动协同过滤
+
+但最著名的是它在全球范围内的自动化试验
+
+1996年Usenet新闻协同过滤系统。从那时起，这个项目
+
+已经扩展到研究全面的信息过滤解决方案，
+
+集成基于内容的方法以及改进当前的协作
+
+过滤技术。
+
+
+
+GroupLens研究项目的进一步信息，包括研究
+
+有关刊物，可于以下网址查阅:
+
+
+
+http://www.grouplens.org/
+
+
+
+GroupLens Research目前的电影推荐系统是基于
+
+协同过滤:
+
+
+
+http://www.movielens.org/
+
+评级文件描述
+
+=============================================================================
+
+
+
+所有的评级都包含在文件“评级。dat”和在
+
+以下格式:
+
+
+
+用户标识::MovieID::评级::时间戳
+
+
+
+—用户id的取值范围为1 ~ 6040
+
+—MovieIDs的取值范围为1 ~ 3952
+
+-以5星评级(只有全星评级)
+
+-时间戳表示从time(2)返回的epoch开始的秒数
+
+-每个用户至少有20个评分
+
+
+
+用户文件描述
+
+=============================================================================用户信息在“users.dat”文件中，如下所示
+
+格式:
+
+
+
+用户标识:性别:年龄::职业::你的
+
+
+
+所有人口统计资料均由用户和is自愿提供
+
+没有检查准确性。只有那些提供了一些统计数据的用户
+
+信息包含在这个数据集中。
+
+
+
+-性别以“M”表示男性，“F”表示女性
+
+—年龄取值范围:
+
+
+
+* 1:“未满18岁”
+
+* 18:“18 - 24”
+
+* 25:“25至34岁”
+
+* 35:“35-44”
+
+* 45:“45-49”
+
+* 50:“50 - 55”
+
+56 * 56:“+”
+
+
+
+-职业从下列选择中选择:
+
+
+
+* 0:“其他”或未指定
+
+* 1:“学术/教育家”
+
+* 2:“艺术家”
+
+* 3:“文书/管理”
+
+* 4:“学院/研究生”
+
+* 5:“客户服务”
+
+* 6:“医生/保健”
+
+* 7:“行政/管理”
+
+* 8:“农民”
+
+* 9:“家庭主妇”
+
+* 10:“K-12学生”
+
+* 11:“律师”
+
+* 12:“程序员”
+
+* 13:“退休”
+
+* 14:“销售/营销”
+
+* 15:“科学家”
+
+* 16:“自雇”
+
+* 17:“技术员/工程师”
+
+* 18:“商人/工匠”
+
+* 19:“失业”
+
+* 20:“作家”
+
+电影文件描述
+=============================================================================电影信息在“movies.dat”文件中，如下所示
+格式:
+
+MovieID::标题::流派
+
+—标题与IMDB提供的标题相同(包括
+年的版本)
+-流派是管道分离的，从以下流派中选择:
+
+*行动
+*冒险
+*动画
+*儿童
+*喜剧
+*犯罪
+*纪录片
+*戏剧
+*幻想
+*黑色
+*恐怖
+*音乐
+*神秘
+*浪漫
+*科幻
+*惊悚片
+*战争
+*西方
+
+-一些movieid不对应的电影由于意外复制
+条目和/或测试条目
+-电影大多是手工输入的，可能会有错误和不一致

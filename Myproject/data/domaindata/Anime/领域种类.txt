@@ -1,0 +1,41 @@
+Action    A
+Adventure  B
+Comedy    C 
+Drama     D
+Sci-Fi    E
+Space     F
+Mystery   G
+Magic     H
+Police    I
+Supernatural  J
+Fantasy       K 
+Shounen       L
+Sports        M
+Josei         N
+Slice of Life  O
+Romance      P
+Cars       Q
+Seinen     R
+Horror     S
+Psychological  T
+Thriller     U
+Mecha       V
+Military   W
+Martial Arts   X
+Super Power   Y
+School     Z
+Ecchi     a
+Vampire   b
+Historical   c
+Dementia      d
+Demons      e
+Samurai   f
+Game     g
+Harem   h
+Shoujo   i
+Music    j
+Hentai   k
+Parody   l
+Kids     m
+Yaoi     n
+Yuri     o
